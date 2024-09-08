@@ -14,7 +14,7 @@ html {
 
 /* Remove default margin in favour of better control in authored CSS */
 body, h1, h2, p {
-  margin-block-end: 0;
+  margin: 0;
 }
 
 /* Set core body defaults */
@@ -56,4 +56,13 @@ picture {
 
     /* TYPOGRAPHY */
     --ff-primary: "Manrope", system-ui;
+    --fs-articleTitle: clamp(1rem, 0.9286rem + 0.3571vi, 1.25rem);;
+    --fs-articleBody: .8125rem;
 }
+
+/* ------ LAYOUT ------ */
+body {
+    background: var(--clr-primary-100);
+    font-family: var(--ff-primary);
+}
+
