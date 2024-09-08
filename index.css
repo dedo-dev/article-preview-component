@@ -45,3 +45,15 @@ picture {
   max-width: 100%;
   display: block;
 }
+
+/* ------ VARIABLE ------ */
+:root {
+    /* COLOR */
+    --clr-primary-100: hsl(210, 46%, 95%);
+    --clr-primary-300: hsl(212, 23%, 69%);
+    --clr-primary-500: hsl(214, 17%, 51%);
+    --clr-primary-700: hsl(217, 19%, 35%);
+
+    /* TYPOGRAPHY */
+    --ff-primary: "Manrope", system-ui;
+}
