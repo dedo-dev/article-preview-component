@@ -59,7 +59,8 @@ picture {
 
   /* TYPOGRAPHY */
   --ff-primary: "Manrope", system-ui;
-  --fs-articleTitle: clamp(1rem, 0.9286rem + 0.3571vi, 1.25rem);;
+  /* --fs-articleTitle: clamp(1rem, 0.9286rem + 0.3571vi, 1.25rem); */
+  --fs-articleTitle: 20px;
   --fs-articleBody: .8125rem;
 }
 
@@ -94,6 +95,10 @@ body {
   overflow: hidden;
 }
 
+.article__img {
+  height: 100%;
+}
+
 .article__content {
   max-width: 500px;
   padding-block: 2.25em 1.25em;
@@ -120,12 +125,12 @@ body {
   display: flex;
   justify-content: space-between;
   margin-block-start: 2rem;
+  /* display: none; */
 }
 
 .article__info {
   display: flex;
   gap: 1rem;
-  /* display: none; */
 }
 
 .article__avatar {
@@ -134,13 +139,22 @@ body {
   clip-path: circle(50%);
 }
 
-.article__share {
+.article__share {border: 1px solid #aa4424;
+  background: var(--clr-primary-700);
+}
+
+.article__share--close {
+  display: none;
+  /* height: 0; */
+}
+
+
+.article__share--open {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1.375em;
-  background: var(--clr-primary-700);
-  /* display: none; */
+/* display: none; */
 }
 
 .article__share p {
